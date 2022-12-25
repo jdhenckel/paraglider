@@ -4,6 +4,39 @@
 <title>Ojibwe Stories</title>
 <style type="text/css">
 
+body {
+  font-family: arial;
+  font-size: calc(1.1 * (1vw + 1vh));
+  background: #9dcbfc;
+}
+canvas {
+  border: 1px solid gray;
+  background-image: linear-gradient(#9dcbfc, #4fa4fe);
+}
+section {
+  background: black;
+  color: white;
+  border: 1px solid gray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(33%, 300px);
+  padding: calc(0.5 * (1vw + 1vh));
+}
+
+dl {
+  font-size: 80%;
+  margin: 1vh 0;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+dl > * {
+  flex: 0 0 50%;
+  margin-left: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
